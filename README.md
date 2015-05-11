@@ -9,13 +9,13 @@ There are a few steps you will need to take in order to build and run the code,
 which closely parallel the procedure to integrate with your own projects.
 
 Start by cloning this repository somewhere on your machine and making sure
-[CocoaPods is installed](https://guides.cocoapods.org/using/getting-started.html). 
+[CocoaPods is installed](https://guides.cocoapods.org/using/getting-started.html).
 
-### Installing ApptentiveConnect CocoaPod
+### Installing the apptentive-ios CocoaPod
 
 1. In a terminal window, change directories to the root of the newly-cloned
    repository.
-2. Type `pod install` to install the ApptentiveConnect CocoaPod.
+2. Type `pod install` to install the apptentive-ios CocoaPod.
 3. Open the `SwiftExample.xcworkspace` file.
 
 ### Adding the Bridging Header
@@ -43,4 +43,7 @@ Start by cloning this repository somewhere on your machine and making sure
 4. In the ViewController.swift file, you can replace the `Event_` string with
    an event name of your choosing.
 
-You should now be ready to build and run your app.
+You should now be ready to build and run your app. You can tap the Engage button
+to send your event to the Apptentive API, or open the Message Center by tapping
+the Message Center button. The number represents the unread message count, and
+will be updated as messages from the app are replied to on the web app. 
