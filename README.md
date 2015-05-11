@@ -2,12 +2,14 @@ Swift Example
 -------------
 
 This repository contains an example project that illustrates how to integrate
-the Apptentive iOS SDK into a Swift project using CocoaPods.
+the Apptentive iOS SDK into a Swift project using
+[CocoaPods](https://cocoapods.org).
 
 There are a few steps you will need to take in order to build and run the code,
 which closely parallel the procedure to integrate with your own projects.
 
-Start by cloning this repository somewhere on your machine.
+Start by cloning this repository somewhere on your machine and making sure
+[CocoaPods is installed](https://guides.cocoapods.org/using/getting-started.html). 
 
 ### Installing ApptentiveConnect CocoaPod
 
@@ -41,4 +43,4 @@ Start by cloning this repository somewhere on your machine.
 4. In the ViewController.swift file, you can replace the `Event_` string with
    an event name of your choosing.
 
-You should now be ready to build and run your app. 
+You should now be ready to build and run your app.
