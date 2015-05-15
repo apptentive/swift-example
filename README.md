@@ -21,7 +21,7 @@ Start by cloning this repository somewhere on your machine and making sure
 ### Adding the Bridging Header
 
 1. Expand the SwiftExample project in the Project Navigator, and then
-   right-click the SwiftExample group and choose Add Files to “SwiftExample”…
+   right-click the SwiftExample group and choose `Add Files to “SwiftExample”…`
 2. Select the `SwiftExample-Bridging-Header.h` file (in the SwiftExample
    directory in the root of the repository) and add it.
 3. Choose the SwiftExample project in the Project Navigator
@@ -29,7 +29,8 @@ Start by cloning this repository somewhere on your machine and making sure
    Settings tab.
 5. Under Swift Compiler - Code Generation, find the Objective-C Bridging Header
    setting and set it to the path of the bridging header (e.g.
-   `$(SRCROOT)/SwiftExample/SwiftExample-Bridging-Header.h`).
+   `$(SRCROOT)/SwiftExample/SwiftExample-Bridging-Header.h`). This should be set
+   on the *Target's* Build Settings, not the Project's.
 
 ### Integrating the Apptentive SDK
 
