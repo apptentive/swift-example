@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "messageCenterUnreadCountChanged", name:ATMessageCenterUnreadCountChangedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "messageCenterUnreadCountChanged:", name:ATMessageCenterUnreadCountChangedNotification, object: nil)
     }
     
     deinit {
