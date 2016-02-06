@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Apptentive
 
 class ViewController: UIViewController {
     @IBOutlet weak var messageCenterButton: UIButton!

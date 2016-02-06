@@ -16,21 +16,13 @@ Start by cloning this repository somewhere on your machine and making sure
 1. In a terminal window, change directories to the root of the newly-cloned
    repository.
 2. Type `pod install` to install the apptentive-ios CocoaPod.
-3. Open the `SwiftExample.xcworkspace` file.
+3. Open the SwiftExample.xcworkspace file.
 
-### Adding the Bridging Header
+### Importing Apptentive
 
-1. Expand the SwiftExample project in the Project Navigator, and then
-   right-click the SwiftExample group and choose `Add Files to “SwiftExample”…`
-2. Select the `SwiftExample-Bridging-Header.h` file (in the SwiftExample
-   directory in the root of the repository) and add it.
-3. Choose the SwiftExample project in the Project Navigator
-4. Choose the SwiftExample target in the source list and switch to the Build
-   Settings tab.
-5. Under Swift Compiler - Code Generation, find the Objective-C Bridging Header
-   setting and set it to the path of the bridging header (e.g.
-   `$(SRCROOT)/SwiftExample/SwiftExample-Bridging-Header.h`). This should be set
-   on the *Target's* Build Settings, not the Project's.
+Because the included podfile uses the `use_frameworks!` directive, all
+that you need to do is add `import Apptentive` at the top level of any
+Swift files in which you would like to call Apptentive SDK methods.
 
 ### Integrating the Apptentive SDK
 
