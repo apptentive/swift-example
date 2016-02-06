@@ -1,2 +1,4 @@
-platform :ios, '7.0'
-pod 'apptentive-ios'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'apptentive-ios', '~> 2.1.2'
