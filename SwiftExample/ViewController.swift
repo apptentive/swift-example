@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "messageCenterUnreadCountChanged:", name:ATMessageCenterUnreadCountChangedNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.messageCenterUnreadCountChanged(_:)), name:ApptentiveMessageCenterUnreadCountChangedNotification, object: nil)
     }
     
     deinit {
@@ -29,10 +29,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func engageEvent1(sender: AnyObject) {
-        ATConnect.sharedConnection().engage("Event_1", fromViewController: self)
+        Apptentive.sharedConnection().engage("Event_1", fromViewController: self)
     }
 
     @IBAction func showMessageCenter(sender: AnyObject) {
-        ATConnect.sharedConnection().presentMessageCenterFromViewController(self)
+        Apptentive.sharedConnection().presentMessageCenterFromViewController(self)
     }
 }

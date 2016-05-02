@@ -1,4 +1,6 @@
 platform :ios, '8.0'
-use_frameworks!
 
-pod 'apptentive-ios', '~> 2.1.2'
+target 'SwiftExample' do
+       use_frameworks!
+       pod 'apptentive-ios', '~> 3.0'
+end
